@@ -75,8 +75,8 @@ The Project Manager application contains the following screens:
 * [Project details](#project-details)
 * [Project settings](#project-settings)
 * [Configure gems](#configure-gems)
-* Create Gem workflow
-* Edit Gem workflow
+* [Create Gem workflow](#create-gem-workflow)
+* [Edit Gem workflow](#edit-gem-workflow)
 
 ### Projects
 
@@ -111,6 +111,8 @@ The project context menu contains the following actions:
 | **Remove from O3DE** | Removes the project from Project Manager and the O3DE manifest, but does not delete the project from disk. |
 | **Delete this Project** | Removes the project from Project Manager and the O3DE manifest _and deletes the project from disk_. |
 
+[Back to reference.](#project-manager-reference)
+
 ### Engine
 
 The **Engine** tab contains settings from the engine manifest and the O3DE manifest. The default folder locations are editable on this screen.
@@ -133,11 +135,15 @@ The Engine tab contains the following O3DE settings:
 | **Default Gems Folder** | Defines the default folder for Gems. New Gems will be created in this folder unless a different path is specified when the Gem is created. | `<user>/O3DE/Gems` |
 | **Default Project Templates Folder** | Defines the default folder for project templates. New project templates will be created in this folder unless a different path is specified when the project template is created. | `<user>/O3DE/Templates` |
 
+[Back to reference.](#project-manager-reference)
+
 ### Project details
 
 The **Enter Project Details** screen is part of the "new project" workflow. On this screen, you can set the project's name and location on your computer. You can also choose the project template, which defines the initial set of Gems that are enabled in your new project. You can further refine the initial set of Gems using the **Configure Gems** button.
 
 ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
+
+[Back to reference.](#project-manager-reference)
 
 ### Project settings
 
@@ -153,6 +159,8 @@ The Edit Project Settings screen contains the following project settings:
 | **Project Location** | The project's location on your computer. If you select a different folder using the folder button, Project Manager will move your project to the new location and update the O3DE manifest with the new path. A project rebuild is required after moving your project in this way. |
 | **Project Preview** | The path to the project icon image. The filename will always be `preview.png`. If you select a different image using the folder button, Project Manager will copy the image to your project folder and rename it `preview.png`. |
 
+[Back to reference.](#project-manager-reference)
+
 ### Configure Gems
 
 The **Configure Gems** screen enables you to change the collection of Gems that are enabled in your project. You can open this screen during the new project workflow, from the **Enter Project Details** screen, or from the **Edit Project Settings** screen of an existing project. You can use the Gem Catalog in the **Configure Gems** screen to find and enable new Gems for your project. Refer to [Adding and Removing Gems in a Project](./add-remove-gems) for instructions on using Configure Gems.
@@ -161,10 +169,77 @@ The **Configure Gems** screen enables you to change the collection of Gems that 
 
 As of O3DE version 22.10, the Configure Gems screen is also available as a main tab in the Project Manager, along with the Project and Engine tab.
 
+[Back to reference.](#project-manager-reference)
+
 ### Create Gem Workflow
 
-TODO.
+The Create Gem Workflow appears anytime you want to create a new gem from the Project Manager. To access it, first go to the Gem Catalog page. From there, go to the Hamburger menu in the top right of the page, and click it for a drop-down menu. Click "Create Gem" from the available options.
+
+Upon clicking, you should be taken to the Create Gem Workflow. The workflow consists of three pages (which you can see on the left hand side): 
+
+**1. Gem Setup**
+
+Here you select the template that your Gem will be based on.
+
+**2. Gem Details**
+
+Here you specify relevant details about the Gem. An exhaustive list includes:
+- Name
+- Display Name
+- Summary
+- Requirements
+- Platforms
+- License
+- License URL
+- User-defined Tags
+- Gem Location
+- Gem Icon Path
+- Documentation URL
+
+**3. Creator Details**
+
+Here you specify relevant details about the creator of the Gem. An exhaustive list includes:
+- Creator Name
+- Origin URL
+- Repo URL
+
+Upon filling out each of the three sections, you can either use the titles in the left hand side, or the Back/Next buttons below to navigate through the workflow to make sure your entries are correct. If they are, then on the Creator Details page, simply click "Create" to create your new gem.
+
+You should be redirected back to the Gem Catalog screen with the notification that your gem was successfully created.
+
+[Back to reference.](#project-manager-reference)
 
 ### Edit Gem Workflow
 
-TODO.
+The Edit Gem Workflow appears anytime you wish to edit gem details from the Project Manager. To access this workflow, select a gem from the Gem Catalog screen. For your selected gem, go to the Inspector panel on the right and click the button near the bottom of the panel called "Edit Gem". 
+
+Upon clicking, you should be taken to the Edit Gem Workflow. The workflow consists of two pages (which you can see on the left hand side):
+
+**1. Gem Details**
+
+Here you specify relevant details about the Gem. An exhaustive list includes:
+- Name
+- Display Name
+- Summary
+- Requirements
+- Platforms
+- License
+- License URL
+- User-defined Tags
+- Gem Icon Path
+- Documentation URL
+
+Please note that Gem Location is present in the workflow but disabled.
+
+**2. Creator Details**
+
+Here you specify relevant details about the creator of the Gem. An exhaustive list includes:
+- Creator Name
+- Origin URL
+- Repo URL
+
+Upon editing any data in these sections, you can either use the titles in the left hand side, or the Back/Next buttons below to navigate through the workflow to make sure your entries are correct. If they are, then on the Creator Details page, simply click "Edit" to edit your gem.
+
+You should be redirected back to the Gem Catalog screen with the notification that your gem was successfully edited.
+
+[Back to reference.](#project-manager-reference)
