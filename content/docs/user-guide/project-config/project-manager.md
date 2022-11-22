@@ -14,6 +14,7 @@ With Project Manager, you can do the following:
 * Open a project in **O3DE Editor**.
 * Add a [Gem](/docs/user-guide/appendix/glossary#gem) repo.
 * Add or remove Gems from a project using the **Gem Catalog**.
+* Create or Edit Gems and their configurations in the **Gem Catalog**
 * Configure the project icon.
 * Configure O3DE manifest settings, such as default locations for projects,  downloadable ("third-party") packages, and other O3DE objects on your computer.
 
@@ -69,11 +70,13 @@ If you built the engine from source using the `INSTALL` target, make sure that y
 
 The Project Manager application contains the following screens:
 
-* Projects
-* Engine
-* Project details
-* Project settings
-* Configure gems
+* [Projects](#projects)
+* [Engine](#engine)
+* [Project details](#project-details)
+* [Project settings](#project-settings)
+* [Configure gems](#configure-gems)
+* Create Gem workflow
+* Edit Gem workflow
 
 ### Projects
 
@@ -155,3 +158,13 @@ The Edit Project Settings screen contains the following project settings:
 The **Configure Gems** screen enables you to change the collection of Gems that are enabled in your project. You can open this screen during the new project workflow, from the **Enter Project Details** screen, or from the **Edit Project Settings** screen of an existing project. You can use the Gem Catalog in the **Configure Gems** screen to find and enable new Gems for your project. Refer to [Adding and Removing Gems in a Project](./add-remove-gems) for instructions on using Configure Gems.
 
 ![Configure Gems screen](/images/user-guide/project-config/add-remove-gems/configure-gems-screen.png)
+
+As of O3DE version 22.10, the Configure Gems screen is also available as a main tab in the Project Manager, along with the Project and Engine tab.
+
+### Create Gem Workflow
+
+TODO.
+
+### Edit Gem Workflow
+
+TODO.
