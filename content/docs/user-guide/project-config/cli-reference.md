@@ -1670,6 +1670,9 @@ edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
                         [-at [ADD_TAGS [ADD_TAGS ...]] | -dt
                         [REMOVE_TAGS [REMOVE_TAGS ...]] | -rt
                         [REPLACE_TAGS [REPLACE_TAGS ...]]]
+                        [-apl [ADD_PLATFORMS [ADD_PLATFORMS ...]] | -dpl
+                        [REMOVE_PLATFORMS [REMOVE_PLATFORMS ...]] | -rpl
+                        [REPLACE_PLATFORMS [REPLACE_PLATFORMS ...]]]
 ```
 
 ### Usage
@@ -1702,13 +1705,25 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
   Adds tags to the `user_tags` property. To add multiple tags, use a space-delimited list. For example: `-at A B C`.
 
-- **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
+- **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --remove-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
 
   Removes tags from the `user_tags` property. To delete multiple tags, use a space-delimited list. For example: `-dt A B C`.
 
 - **`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`**
   
   Replaces the `user_tags` property with the specified space-delimited list of values.
+
+- **`-apl [ADD_PLATFORMS [ADD_PLATFORMS ...]], --add-platforms [ADD_PLATFORMS [ADD_PLATFORMS ...]]`**
+
+  Adds platforms to the `platforms` property. To add multiple platforms, use a space-delimited list. For example: `-apl A B C`.
+
+- **`-dpl [DELETE_PLATFORMS [DELETE_PLATFORMS ...]], --remove-platforms [DELETE_PLATFORMS [DELETE_PLATFORMS ...]]`**
+
+  Removes platforms from the `platforms` property. To delete multiple platforms, use a space-delimited list. For example: `-dt A B C`.
+
+- **`-rpl [REPLACE_PLATFORMS [REPLACE_PLATFORMS ...]], --replace-platforms [REPLACE_PLATFORMS [REPLACE_PLATFORMS ...]]`**
+  
+  Replaces the `platforms` property with the specified space-delimited list of values.
 
 
 **Gem properties:**
